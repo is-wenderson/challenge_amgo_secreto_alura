@@ -44,7 +44,7 @@ function sortearAmigo(){
         alert("A lista de amigos está vazia!");
         return;
     }
-    let nomeAleatorio = parseInt(Math.random() * tamanhodalista);
+    let nomeAleatorio = Math.floor(Math.random() * tamanhodalista);
     let nomeSecreto = Amigos[nomeAleatorio];
     let campoResultado = document.getElementById('resultado');
     campoResultado.innerHTML = "O amigo secreto é: " + nomeSecreto;
